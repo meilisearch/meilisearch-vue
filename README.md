@@ -28,7 +28,7 @@ This repository describes the steps to integrate a relevant front-end search bar
 
 To integrate a front-end search bar, you need to install two packages:
 - the open-source [Vue InstantSearch](https://github.com/algolia/vue-instantsearch/) library powered by Algolia that provides all the front-end tools you need to highly customize your search bar environment.
-- the MeiliSearch client [instant-meilisearch](/!\ add-link /!\) to establish the communication between your MeiliSearch instance and the Vue InstantSearch library.
+- the MeiliSearch client [instant-meilisearch](https://github.com/meilisearch/instant-meilisearch/) to establish the communication between your MeiliSearch instance and the Vue InstantSearch library.
 
 Run:
 
@@ -104,7 +104,7 @@ body {
 ## Customization and Documentation
 
 - The open-source Vue InstantSearch library is widely used and well documented in the [Algolia documentation](https://www.algolia.com/doc/api-reference/widgets/vue/). It provides all the widgets to customize and improve your search bar environment in your Vue application.
-- The [instant-meilisearch documentation](/!\ add-link /!\).
+- The [instant-meilisearch documentation](https://github.com/meilisearch/instant-meilisearch/) to add some customization.
 - The [MeiliSearch documentation](https://docs.meilisearch.com/).
 
 <hr>
