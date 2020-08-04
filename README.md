@@ -61,7 +61,7 @@ In the `App.vue` file:
 
 ```vue
 <template>
-  <ais-instant-search :search-client="searchClient" index-name="codesandbox-IS">
+  <ais-instant-search :search-client="searchClient" index-name="steam-video-games">
     <ais-search-box />
     <ais-hits>
       <div slot="item" slot-scope="{ item }">
