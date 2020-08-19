@@ -74,7 +74,6 @@ In the `App.vue` file:
 
 <script>
 import instantMeiliSearch from '@meilisearch/instant-meilisearch';
-import 'instantsearch.css/themes/algolia-min.css';
 
 export default {
   data() {
