@@ -1,6 +1,6 @@
 const MeiliSearch = require('meilisearch')
 const dataset = require('./prizes.json')
- 
+
 ;(async () => {
     // Create client
     const client = new MeiliSearch({
