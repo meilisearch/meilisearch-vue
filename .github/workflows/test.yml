@@ -1,4 +1,4 @@
-name: Jest
+name: Nobel-prizes tests
 
 on:
   pull_request:
@@ -19,9 +19,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-      - name: print version
-        run: node -v
       - name: Install dependencies
-        run: yarn --dev
+        run: yarn --cwd examples/nobel-prizes --dev
       - name: Run style check
-        run: yarn lint
+        run: yarn --cwd examples/nobel-prizes lint
