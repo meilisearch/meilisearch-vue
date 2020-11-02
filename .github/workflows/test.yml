@@ -1,0 +1,27 @@
+name: Jest
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ '10', '12', '14' ]
+    name: Node ${{ matrix.node }} Nobel-prizes test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: print version
+        run: node -v
+      - name: Install dependencies
+        run: yarn --dev
+      - name: Run style check
+        run: yarn lint
