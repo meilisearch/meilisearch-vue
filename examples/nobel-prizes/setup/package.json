@@ -1,0 +1,28 @@
+{
+  "name": "nobel-prizes-setup",
+  "description": "Adds the nobel dataset and settings to MeiliSearch",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {},
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "author": "Charlotte Vermandel",
+  "devDependencies": {
+    "meilisearch": "^0.15.0"
+  }
+}
