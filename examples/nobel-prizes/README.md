@@ -82,3 +82,11 @@ $ cd ..
 $ yarn serve # or npm run serve
 $ open http://localhost:8080/
 ```
+
+## Working example
+
+A working example runs on CodeSandBox:
+
+[![Nobel Prize Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/naughty-napier-zdy1r?file=/src/App.vue)
+
+💡 If you have never used InstantSearch, we recommend reading this [getting started documentation](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/js/).
