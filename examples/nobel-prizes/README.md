@@ -82,3 +82,9 @@ $ cd ..
 $ yarn serve # or npm run serve
 $ open http://localhost:8080/
 ```
+
+## Working example
+
+A working example runs on CodeSandBox:
+
+[![Nobel Prize Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/naughty-napier-zdy1r?file=/src/App.vue)
