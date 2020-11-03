@@ -65,7 +65,7 @@ You have to change these credentials with your local instance:
 const MEILISEARCH_HOST = "http://127.0.0.1:7700"
 const MEILISEARCH_API_KEY = ""
 
-Because we did not set any API key at [step 1](#1.-download-and-launch), we don't need to provide any `MEILISEARCH_API_KEY` here.
+// Because we did not set any API key at [step 1](#1.-download-and-launch), we don't need to provide any `MEILISEARCH_API_KEY` here.
 export {
   MEILISEARCH_HOST,
   MEILISEARCH_API_KEY
