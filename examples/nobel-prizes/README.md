@@ -39,7 +39,7 @@ $ ./meilisearch
 Server is listening on: http://127.0.0.1:7700
 ```
 
-This walkthrough does not uses the [master key](https://docs.meilisearch.com/guides/advanced_guides/configuration.html#master-key) option.
+This walkthrough does not use the [master key](https://docs.meilisearch.com/guides/advanced_guides/configuration.html#master-key) option.
 
 ### 2. Run the setup
 
