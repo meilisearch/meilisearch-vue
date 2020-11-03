@@ -20,8 +20,9 @@ $ git clone git@github.com:meilisearch/meilisearch-vue.git
 $ cd meilisearch-vue/examples/nobel-prizes
 $ yarn # or npm install
 $ yarn serve # or npm run serve
-$ open http://localhost:8080/
 ```
+
+You can now visit `http://localhost:8080/` in your browser.
 
 We've included some credentials in the code, allowing you to test the demo without having to create your own MeiliSearch instance.
 
@@ -79,8 +80,9 @@ You can now go back to the root directory and run the project. The front-end cli
 ```bash
 $ cd ..
 $ yarn serve # or npm run serve
-$ open http://localhost:8080/
 ```
+
+You can now visit `http://localhost:8080/` in your browser.
 
 ## Working example
 
