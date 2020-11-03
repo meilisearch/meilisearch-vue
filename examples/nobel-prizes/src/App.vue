@@ -30,9 +30,6 @@
                   &nbsp;
                   <ais-highlight :hit="item" attribute="surname" />
                 </div>
-                <div class="hit-info">
-                  <ais-highlight :hit="item" attribute="fullname" />
-                </div>
                 <div class="hit-info motivation">
                   <ais-highlight :hit="item" attribute="motivation" />
                 </div>
