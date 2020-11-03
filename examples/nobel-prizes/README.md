@@ -70,7 +70,7 @@ export {
 }
 ```
 
-Because we did not set any API key at [step 1](#1.-download-and-launch), we don't need to provide any `MEILISEARCH_API_KEY` here.
+Because we did not set any API key at [step 1](#1-download-and-launch-meilisearch), we don't need to provide any `MEILISEARCH_API_KEY` here.
 
 ### 4. Run the project
 
