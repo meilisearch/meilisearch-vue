@@ -109,7 +109,7 @@ body {
 
 ## Demos
 
-Each demo in this repository comes with a README.md explaining how to launch and use it. More information on them can be found there.
+Each demo in this repository comes with a README.md explaining how to launch and use it. You can find the demos in the [examples directory](./examples).
 
 <hr>
 
