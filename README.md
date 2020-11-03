@@ -107,6 +107,10 @@ body {
 - The [instant-meilisearch documentation](https://github.com/meilisearch/instant-meilisearch/) to add some customization.
 - The [MeiliSearch documentation](https://docs.meilisearch.com/).
 
+## Demos
+
+Each demo in this repository comes with a README.md explaining how to launch and use it. You can find the demos in the [examples directory](./examples).
+
 <hr>
 
 **MeiliSearch** provides and maintains many **SDKs and Integration tools** like this one. We want to provide everyone with an **amazing search experience for any kind of project**. If you want to contribute, make suggestions, or just know what's going on right now, visit us in the [integration-guides](https://github.com/meilisearch/integration-guides) repository.

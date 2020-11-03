@@ -1,0 +1,14 @@
+{
+  "name": "nobel-prizes-setup",
+  "description": "Adds the nobel dataset and settings to MeiliSearch",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {},
+  "author": "Charlotte Vermandel",
+  "devDependencies": {
+    "meilisearch": "^0.15.0"
+  }
+}
