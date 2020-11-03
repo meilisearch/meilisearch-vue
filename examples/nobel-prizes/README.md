@@ -27,21 +27,17 @@ We've included some credentials in the code, allowing you to test the demo witho
 
 ## Data import
 
-If you want to replicate this demo using your own MeiliSearch, you will have to follow these steps: 
+If you want to replicate this demo using your own MeiliSearch, you will have to follow these steps:
 
-### 1. Download and Launch 
+### 1. Download and Launch
 
 [Download and launch MeiliSearch](https://docs.meilisearch.com/guides/advanced_guides/installation.html) using the basic configuration.
 
-Do not add any master key option. This setup **works without api key**. If you would like to add an `api key`, you can add the api key on line 8 of `setup.js`:
-
-```javascript
-// setup/setup.js
-const client = new MeiliSearch({
-    host: 'http://127.0.0.1:7700'
-    apiKey: "my_api_key"
-})
+```bash
+./meilisearch
 ```
+
+This walkthrough does not uses a [master key](https://docs.meilisearch.com/guides/advanced_guides/configuration.html#master-key) option.
 
 ### 2. Run the setup
 
@@ -52,14 +48,14 @@ $ yarn # or npm install
 $ yarn start # or npm run start
 ```
 
-This will do the following: 
+This will do the following:
 - Create an index called `prizes` in your MeiliSearch instance.
 - Add all Nobel prizes documents to that index.
 - Add custom settings for a more relevant search.
 
 ### 3. Change the credentials in the front
 
-The credentials of the MeiliSearch instance are written inside `src/meilisearch-client.js`. By default, these are the public credentials for the Nobel dataset. 
+The credentials of the MeiliSearch instance are written inside `src/meilisearch-client.js`. By default, these are the public credentials for the Nobel dataset.
 
 You have to change these credentials with your local instance:
 
