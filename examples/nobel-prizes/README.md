@@ -5,8 +5,7 @@ The search is powered by [MeiliSearch](https://github.com/meilisearch/meilisearc
 
 ## Demo
 
-<!-- TODO: CHANGE LINK -->
-_Based on [How to Search Nobel Prize Winners Faster With MeiliSearch and JavaScript](https://blog.meilisearch.com/p/8b7238e0-eb2f-47ee-90d4-815a8357f12b/)._
+_Based on [How to Search Nobel Prize Winners Faster With MeiliSearch and JavaScript](https://blog.meilisearch.com/how-to-search-nobel-prize-winners-faster-with-meilisearch-api-for-javascript/)._
 
 [![Nobel prices demo](misc/marie-heavy.gif)](https://nobel.meilisearch.com)
 
