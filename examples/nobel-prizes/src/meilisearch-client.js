@@ -1,5 +1,5 @@
-const MEILISEARCH_HOST = "https://finding-demos.meilisearch.com/"
-const MEILISEARCH_API_KEY = "2b902cce4f868214987a9f3c7af51a69fa660d74a785bed258178b96e3480bb3"
+const MEILISEARCH_HOST = "https://demos.meilisearch.com"
+const MEILISEARCH_API_KEY = "dc3fedaf922de8937fdea01f0a7d59557f1fd31832cb8440ce94231cfdde7f25"
 
 export {
   MEILISEARCH_HOST,
