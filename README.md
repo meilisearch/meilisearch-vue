@@ -29,7 +29,11 @@ To integrate a front-end search bar, you need to install two packages:
 - the MeiliSearch client [instant-meilisearch](https://github.com/meilisearch/instant-meilisearch/) to establish the communication between your MeiliSearch instance and the Vue InstantSearch library.<br>
 _Instead of reinventing the wheel, we have opted to reuse the InstantSearch library for our own front-end tooling. We will contribute upstream any improvements that may result from our adoption of InstantSearch._
 
-Run:
+NB: If you don't have any MeiliSearch instance running and containing your data, you should take a look at this [getting started page](https://docs.meilisearch.com/guides/introduction/quick_start_guide.html).
+
+### Using a package manager
+
+Run the following commands:
 
 ```bash
 $ yarn add vue-instantsearch @meilisearch/instant-meilisearch
@@ -37,9 +41,22 @@ $ yarn add vue-instantsearch @meilisearch/instant-meilisearch
 $ npm install vue-instantsearch @meilisearch/instant-meilisearch
 ```
 
-NB: If you don't have any MeiliSearch instance running and containing your data, you should take a look at this [getting started page](https://docs.meilisearch.com/guides/introduction/quick_start_guide.html).
+### Including in a HTML File
+
+Include the following in your `html` file.
+```html
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-instantsearch@3.2.0/dist/vue-instantsearch.js"></script>
+  <!-- Light production build, for development remove `min` from file name  -->
+  <script src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/dist/instant-meilisearch.umd.min.js"></script>
+```
+
+For more information on using meilisearch-vue in an `html` file, see example in [examples/simple-game-search](./examples/simple-game-search).
+
 
 ## Getting Started
+
+The getting started uses the package manager.
 
 In the `main.js` file:
 

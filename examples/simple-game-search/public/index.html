@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!--
+    To use this browser build, please change the following stylesheet tag with this CDN
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" />
+   -->
+   <link rel="stylesheet" href="../src/basic_search.css" />
+  </head>
+  <body>
+    <div id="app" class="wrapper">
+      <ais-instant-search :search-client="searchClient" index-name="steam-video-games" >
+        <ais-configure :hits-per-page.camel="10" />
+        <ais-search-box placeholder="Search here…" class="searchbox"></ais-search-box>
+        <ais-hits>
+          <div slot="item" slot-scope="{ item }">
+            <ais-highlight :hit="item" attribute="name" />
+          </div>
+        </ais-hits>
+      </ais-instant-search>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-instantsearch@3.2.0/dist/vue-instantsearch.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/dist/instant-meilisearch.umd.min.js"></script>
+  <script>
+    Vue.use(VueInstantSearch)
+    var app = new Vue({
+        el: '#app',
+        data: {
+            searchClient: instantMeiliSearch(
+              "https://demos.meilisearch.com",
+              "dc3fedaf922de8937fdea01f0a7d59557f1fd31832cb8440ce94231cfdde7f25",
+            )
+        }
+    })
+  </script>
+</html>
