@@ -43,7 +43,8 @@ $ npm install vue-instantsearch @meilisearch/instant-meilisearch
 
 ### Including in a HTML File
 
-Include the following in your `html` file.
+Include the following `<script>` tags in your `html` file.
+
 ```html
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue-instantsearch@3.2.0/dist/vue-instantsearch.js"></script>
