@@ -31,14 +31,14 @@ If you want to replicate this demo using your own MeiliSearch instance, you will
 
 ### 1. Download and launch MeiliSearch
 
-[Download and launch MeiliSearch](https://docs.meilisearch.com/guides/advanced_guides/installation.html) using the basic configuration. For example, by using [cURL](https://curl.haxx.se/) in your terminal.
+[Download and launch MeiliSearch](https://docs.meilisearch.com/reference/features/installation.html) using the basic configuration. For example, by using [cURL](https://curl.haxx.se/) in your terminal.
 
 ```bash
 $ curl -L https://install.meilisearch.com | sh
 $ ./meilisearch
 ```
 
-This walkthrough runs MeiliSearch in a development environment, and therefore it does not use any [master key](https://docs.meilisearch.com/guides/advanced_guides/configuration.html#master-key).
+This walkthrough runs MeiliSearch in a development environment, and therefore it does not use any [master key](https://docs.meilisearch.com/reference/features/configuration.html#master-key).
 
 ### 2. Run the setup
 
