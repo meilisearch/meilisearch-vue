@@ -7,7 +7,8 @@ const dataset = require('./prizes.json')
         host: 'http://127.0.0.1:7700',
     })
 
-    const index = client.index('prizes')
+    // Create Index if it does not already exist
+    const index = await client.getOrCreateIndex('prizes')
     console.log('Index "prizes" created.');
 
     // Add settings
@@ -22,7 +23,8 @@ const dataset = require('./prizes.json')
           "category"
         ]
       }
-    await index.updateSettings(settings)
+    let settingsId = await index.updateSettings(settings)
+
     console.log('Settings added to "prizes" index.');
 
     // Add documents
