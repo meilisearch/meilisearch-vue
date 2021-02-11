@@ -23,7 +23,10 @@ const dataset = require('./prizes.json')
           "category"
         ]
       }
-    let settingsId = await index.updateSettings(settings)
+    let { updateId: settingsUpdate} = await index.updateSettings(settings)
+    await index.waitForPendingUpdate(settingsUpdate, {
+      timeOutMs: 100000
+    })
 
     console.log('Settings added to "prizes" index.');
 
