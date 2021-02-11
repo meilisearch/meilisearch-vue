@@ -71,7 +71,7 @@ In the `App.vue` file:
 </template>
 
 <script>
-import instantMeiliSearch from '@meilisearch/instant-meilisearch';
+import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 
 export default {
   data() {
