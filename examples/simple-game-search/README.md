@@ -8,7 +8,7 @@ The demo in this directory showcases a basic search that will let you search thr
 
 
 
-[![Nobel prices demo](asset/stardew.gif)](https://nobel.meilisearch.com)
+[![Steam game demo](asset/stardew.gif)](https://nobel.meilisearch.com)
 
 ## Download 
 
