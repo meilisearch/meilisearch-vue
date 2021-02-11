@@ -1,15 +1,14 @@
-const MeiliSearch = require('meilisearch')
+const { MeiliSearch } = require('meilisearch')
 const dataset = require('./prizes.json')
 
 ;(async () => {
     // Create client
     const client = new MeiliSearch({
-        host: 'http://127.0.0.1:7700'
+        host: 'http://127.0.0.1:7700',
+        apiKey: "masterKey"
     })
 
-    // Create Index
-    await client.createIndex('prizes')
-    const index = client.getIndex('prizes')
+    const index = client.index('prizes')
     console.log('Index "prizes" created.');
 
     // Add settings
