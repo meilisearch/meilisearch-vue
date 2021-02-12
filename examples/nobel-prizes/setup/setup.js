@@ -1,15 +1,14 @@
-const MeiliSearch = require('meilisearch')
+const { MeiliSearch } = require('meilisearch')
 const dataset = require('./prizes.json')
 
 ;(async () => {
     // Create client
     const client = new MeiliSearch({
-        host: 'http://127.0.0.1:7700'
+        host: 'http://127.0.0.1:7700',
     })
 
-    // Create Index
-    await client.createIndex('prizes')
-    const index = client.getIndex('prizes')
+    // Create Index if it does not already exist
+    const index = await client.getOrCreateIndex('prizes')
     console.log('Index "prizes" created.');
 
     // Add settings
@@ -24,7 +23,11 @@ const dataset = require('./prizes.json')
           "category"
         ]
       }
-    await index.updateSettings(settings)
+    let { updateId: settingsUpdate} = await index.updateSettings(settings)
+    await index.waitForPendingUpdate(settingsUpdate, {
+      timeOutMs: 100000
+    })
+
     console.log('Settings added to "prizes" index.');
 
     // Add documents

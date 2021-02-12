@@ -45,7 +45,7 @@
 
 <script>
 import "instantsearch.css/themes/algolia-min.css";
-import instantMeiliSearch from "@meilisearch/instant-meilisearch";
+import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 import { MEILISEARCH_HOST, MEILISEARCH_API_KEY } from './meilisearch-client'
 
 export default {
