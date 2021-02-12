@@ -13,7 +13,7 @@
 </h4>
 
 <p align="center">
-  <a href="https://github.com/meilisearch/MeiliSearch/discussions" alt="Discussions"><img src="https://img.shields.io/badge/github-discussions-red" /></a>
+  <a href="https://github.com/meilisearch/meilisearch-vue/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-informational" alt="License"></a>
 </p>
 
 <p align="center">⚡ How to integrate a front-end search bar in your Vue application using MeiliSearch</p>
