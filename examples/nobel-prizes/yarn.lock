@@ -3482,10 +3482,10 @@ inquirer@^7.0.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
-instantsearch.css@7.4.2:
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/instantsearch.css/-/instantsearch.css-7.4.2.tgz#2b02db07c865ce2c946ec20c1eb4556377cad90c"
-  integrity sha512-CaOdFWCpHOWGAkJRpwC4+8ROU3Upp3xrUuc0Mg92UucJ84MWMJWkVZDDyRwubgJe4HXQM2rV6b+bJaDeeZGunw==
+instantsearch.css@7.4.5:
+  version "7.4.5"
+  resolved "https://registry.yarnpkg.com/instantsearch.css/-/instantsearch.css-7.4.5.tgz#2a521aa634329bf1680f79adf87c79d67669ec8d"
+  integrity sha512-iIGBYjCokU93DDB8kbeztKtlu4qVEyTg1xvS6iSO1YvqRwkIZgf0tmsl/GytsLdZhuw8j4wEaeYsCzNbeJ/zEQ==
 
 instantsearch.js@^4.16.1:
   version "4.21.0"
