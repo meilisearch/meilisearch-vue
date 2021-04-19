@@ -1,6 +1,5 @@
 {
-  "name": "nobel-prizes",
-  "description": "Front-end to showcase search in nobel prizes with MeiliSearch.",
+  "name": "meilisearch-games-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@meilisearch/instant-meilisearch": "^0.4.1",
+    "@meilisearch/instant-meilisearch": "0.4.1",
     "instantsearch.css": "7.4.2",
-    "meilisearch": "^0.18.1",
     "vue": "^2.6.11",
-    "vue-instantsearch": "^3.6.0"
+    "vue-instantsearch": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "4.1.1",
@@ -48,8 +46,9 @@
     "not ie <= 8"
   ],
   "keywords": [
-    "demo",
-    "vue"
+    "meilisearch",
+    "vue",
+    "instantsearch"
   ],
-  "author": "Charlotte Vermandel"
+  "description": "Demo of meilisearch-vue of video games"
 }
