@@ -8,7 +8,7 @@ updates:
   open-pull-requests-limit: 10
   versioning-strategy: increase
   rebase-strategy: disabled
-    ignore:
+  ignore:
     - dependency-name: "eslint*"
     - dependency-name: "@vue/cli-plugin-eslint"
 
@@ -20,6 +20,6 @@ updates:
   open-pull-requests-limit: 10
   versioning-strategy: increase
   rebase-strategy: disabled
-    ignore:
+  ignore:
     - dependency-name: "eslint*"
     - dependency-name: "babel-eslint"
