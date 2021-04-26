@@ -4,6 +4,7 @@
       <h1 class="header-title">MeiliSearch + Vue InstantSearch</h1>
       <p class="header-subtitle">Search in Steam video games 🎮</p>
     </header>
+    <!-- Disclaimer -->
     <p class="disclaimer">
       This is not the official Steam dataset but only for demo purpose. Enjoy
       searching with MeiliSearch!
