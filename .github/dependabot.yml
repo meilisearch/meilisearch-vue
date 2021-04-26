@@ -1,18 +1,6 @@
 version: 2
 updates:
 - package-ecosystem: npm
-  directory: "/examples/video-games"
-  schedule:
-    interval: weekly
-    time: "04:00"
-  open-pull-requests-limit: 10
-  versioning-strategy: increase
-  rebase-strategy: disabled
-  ignore:
-    - dependency-name: "eslint*"
-    - dependency-name: "@vue/cli-plugin-eslint"
-
-- package-ecosystem: npm
   directory: "/examples/nobel-prizes"
   schedule:
     interval: weekly
@@ -24,3 +12,6 @@ updates:
     - dependency-name: "eslint*"
     - dependency-name: "babel-eslint"
     - dependency-name: "@vue/cli-plugin-eslint"
+  labels:
+  - skip-changelog
+  - dependencies
