@@ -134,10 +134,10 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@meilisearch/instant-meilisearch@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@meilisearch/instant-meilisearch/-/instant-meilisearch-0.4.1.tgz#661210508ec6fc941d557ad199236f1fd9595c41"
-  integrity sha512-8lStbnWDhnOgSaAmWtVukly9inX3Zjp2Ljhijlk/+ioOje/09pu3Oiq3dBzm4qxMWo4rZViBLkzO2vzRDpQ9zA==
+"@meilisearch/instant-meilisearch@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@meilisearch/instant-meilisearch/-/instant-meilisearch-0.4.2.tgz#a4456c222c599b2a47a5e62790dffba164e52b1a"
+  integrity sha512-SeEKw3KnxTvLZ4uCWRRtDsf6J1jtlmHie+8OnSHDU2Enz+tOSMEItLLir/AdZG2QOKBBzRXdwpcCyHCeJOHwOQ==
   dependencies:
     meilisearch "^0.18.1"
 
