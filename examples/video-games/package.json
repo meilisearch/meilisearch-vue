@@ -11,7 +11,7 @@
     "@meilisearch/instant-meilisearch": "0.4.1",
     "instantsearch.css": "7.4.5",
     "vue": "^2.6.11",
-    "vue-instantsearch": "^3.1.0"
+    "vue-instantsearch": "3.6.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "4.1.1",
