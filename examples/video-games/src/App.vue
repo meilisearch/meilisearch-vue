@@ -4,7 +4,6 @@
       <h1 class="header-title">MeiliSearch + Vue InstantSearch</h1>
       <p class="header-subtitle">Search in Steam video games 🎮</p>
     </header>
-    <!-- Disclaimer -->
     <p class="disclaimer">
       This is not the official Steam dataset but only for demo purpose. Enjoy
       searching with MeiliSearch!
@@ -67,10 +66,7 @@ export default {
     return {
       searchClient: instantMeiliSearch(
         "https://demos.meilisearch.com",
-        "dc3fedaf922de8937fdea01f0a7d59557f1fd31832cb8440ce94231cfdde7f25",
-        {
-          primaryKey: "id",
-        }
+        "dc3fedaf922de8937fdea01f0a7d59557f1fd31832cb8440ce94231cfdde7f25"
       ),
     };
   },
