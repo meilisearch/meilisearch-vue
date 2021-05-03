@@ -1793,7 +1793,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-fetch@^3.0.5:
+cross-fetch@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
   integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
@@ -4339,12 +4339,12 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-meilisearch@^0.18.1:
-  version "0.18.1"
-  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.18.1.tgz#6b12da60628ec5d6438ba677a8295971e1035938"
-  integrity sha512-eGdcx5/0ktj5I2vC/bNbHg3ORuq9nh++fA39t03nG31J1SoFJmnx3Z0r83Q/yrfA+hAP/qhCI/6B8dHMEcCQJg==
+meilisearch@^0.18.1, meilisearch@^0.18.2:
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.18.2.tgz#e26d33a4bf163b2d96b14015063ec5979a004793"
+  integrity sha512-L65u+yNNtIyai3V1XB7BOq+fAt6MzB2KtsqvaW6GNahPtWCZF9SKvWOl6fjhzH3KOHDyT++A65UoYJP4J7vnVA==
   dependencies:
-    cross-fetch "^3.0.5"
+    cross-fetch "^3.1.4"
 
 memory-fs@^0.4.1:
   version "0.4.1"
