@@ -3628,7 +3628,7 @@ instantsearch.css@7.4.5:
   resolved "https://registry.yarnpkg.com/instantsearch.css/-/instantsearch.css-7.4.5.tgz#2a521aa634329bf1680f79adf87c79d67669ec8d"
   integrity sha512-iIGBYjCokU93DDB8kbeztKtlu4qVEyTg1xvS6iSO1YvqRwkIZgf0tmsl/GytsLdZhuw8j4wEaeYsCzNbeJ/zEQ==
 
-instantsearch.js@^4.16.1:
+instantsearch.js@^4.20.0:
   version "4.21.0"
   resolved "https://registry.yarnpkg.com/instantsearch.js/-/instantsearch.js-4.21.0.tgz#3eec6b596795af7ec534d510fef58f36236a87e5"
   integrity sha512-SgA7wRyicP8Uwdomp0dNQY9rWIjRSuTfyPgQ6GjRuYT7k8pfC7scHpC9CSfsTi6d0FTV18Psk+citFDRhXlffg==
@@ -7173,13 +7173,13 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
-vue-instantsearch@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/vue-instantsearch/-/vue-instantsearch-3.6.0.tgz#420efb56ed56a748acbddd620d9bd218c617d3ad"
-  integrity sha512-j+jyKlwo448NbxmmLpAR2IG9QU7SlaV8E2S3JNWyHbpPDmRPWM7wpJUpvBqTS4ZUXwpbL4MIerPLcpGjU6Y7TA==
+vue-instantsearch@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/vue-instantsearch/-/vue-instantsearch-3.7.0.tgz#3247aa601f8ba5b1d478418cc831544d4fc55118"
+  integrity sha512-ilXOXnZbllZOFpJ+hP9rISbnT7PZW8CfW35OGaB5zeAANjnZpFNIdRRUpFoEKtU8fsRqYcYMMJILC7OD5xSJcg==
   dependencies:
     algoliasearch-helper "^3.1.0"
-    instantsearch.js "^4.16.1"
+    instantsearch.js "^4.20.0"
 
 "vue-loader-v16@npm:vue-loader@^16.1.0":
   version "16.2.0"
