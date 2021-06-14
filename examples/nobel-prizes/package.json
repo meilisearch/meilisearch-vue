@@ -12,7 +12,7 @@
     "@meilisearch/instant-meilisearch": "^0.4.2",
     "instantsearch.css": "7.4.5",
     "meilisearch": "^0.18.1",
-    "vue": "^2.6.11",
+    "vue": "^2.6.14",
     "vue-instantsearch": "^3.6.0"
   },
   "devDependencies": {
@@ -21,7 +21,7 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.0.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
     "root": true,
