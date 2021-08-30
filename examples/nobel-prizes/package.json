@@ -11,7 +11,7 @@
   "dependencies": {
     "@meilisearch/instant-meilisearch": "^0.4.2",
     "instantsearch.css": "7.4.5",
-    "meilisearch": "^0.18.1",
+    "meilisearch": "^0.20.0",
     "vue": "^2.6.11",
     "vue-instantsearch": "^3.6.0"
   },
