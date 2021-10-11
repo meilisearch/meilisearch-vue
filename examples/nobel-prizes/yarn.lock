@@ -134,12 +134,12 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@meilisearch/instant-meilisearch@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@meilisearch/instant-meilisearch/-/instant-meilisearch-0.4.2.tgz#a4456c222c599b2a47a5e62790dffba164e52b1a"
-  integrity sha512-SeEKw3KnxTvLZ4uCWRRtDsf6J1jtlmHie+8OnSHDU2Enz+tOSMEItLLir/AdZG2QOKBBzRXdwpcCyHCeJOHwOQ==
+"@meilisearch/instant-meilisearch@^0.5.6":
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@meilisearch/instant-meilisearch/-/instant-meilisearch-0.5.6.tgz#ab69d635ed115acf4c578310d0b86dc12449e06f"
+  integrity sha512-R3WJ4HTigUuF30kaeYGtDqRA9hiKu74EhoUGjR+XaH1HNcdqF7A/KOAIHJ2dpVsbTCWQcFDchZAc/OIAOK7aMA==
   dependencies:
-    meilisearch "^0.18.1"
+    meilisearch "^0.21.0"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1793,7 +1793,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-fetch@^3.0.5:
+cross-fetch@^3.0.5, cross-fetch@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
   integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
@@ -4345,6 +4345,13 @@ meilisearch@^0.18.1:
   integrity sha512-eGdcx5/0ktj5I2vC/bNbHg3ORuq9nh++fA39t03nG31J1SoFJmnx3Z0r83Q/yrfA+hAP/qhCI/6B8dHMEcCQJg==
   dependencies:
     cross-fetch "^3.0.5"
+
+meilisearch@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.21.0.tgz#440f686803314444eb97a821ec143c8d01b33f64"
+  integrity sha512-LBLePf0lgTEHX2vIkdC9AH2a7XITssKTYHBaUjuCnE394Q6ntLmvpYWjGCfv6fqGTv9q9vkfy1kdfYrqL9a2XA==
+  dependencies:
+    cross-fetch "^3.1.4"
 
 memory-fs@^0.4.1:
   version "0.4.1"
