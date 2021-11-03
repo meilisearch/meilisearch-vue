@@ -5,10 +5,13 @@ const dataset = require('./prizes.json')
     // Create client
     const client = new MeiliSearch({
         host: 'http://127.0.0.1:7700',
+        apiKey: 'masterKey'
     })
 
     // Create Index if it does not already exist
+    console.log("before")
     const index = await client.getOrCreateIndex('prizes')
+    console.log("after")
     console.log('Index "prizes" created.');
 
     // Add settings
@@ -18,7 +21,7 @@ const dataset = require('./prizes.json')
         displayedAttributes: ["*"],
         stopWords: ["a", "an", "the"],
         synonyms: { },
-        attributesForFaceting: [
+        filterableAttributes: [
           "year",
           "category"
         ]
