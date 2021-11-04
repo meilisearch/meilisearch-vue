@@ -134,12 +134,12 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@meilisearch/instant-meilisearch@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@meilisearch/instant-meilisearch/-/instant-meilisearch-0.4.2.tgz#a4456c222c599b2a47a5e62790dffba164e52b1a"
-  integrity sha512-SeEKw3KnxTvLZ4uCWRRtDsf6J1jtlmHie+8OnSHDU2Enz+tOSMEItLLir/AdZG2QOKBBzRXdwpcCyHCeJOHwOQ==
+"@meilisearch/instant-meilisearch@^0.5.9":
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/@meilisearch/instant-meilisearch/-/instant-meilisearch-0.5.9.tgz#29dfe2bb08c7c91907832ea8337542d2adef64de"
+  integrity sha512-QdG2G9xORU6hmk6xz3JCZdc1JNhUz7++ENl46CRVGlVfCCvRHHXqr+geFl4oRCLQAhOw6v51SKdA33+iZJiiDQ==
   dependencies:
-    meilisearch "^0.18.1"
+    meilisearch "^0.22.1"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1793,7 +1793,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-fetch@^3.0.5, cross-fetch@^3.1.4:
+cross-fetch@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
   integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
@@ -4339,14 +4339,7 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-meilisearch@^0.18.1:
-  version "0.18.1"
-  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.18.1.tgz#6b12da60628ec5d6438ba677a8295971e1035938"
-  integrity sha512-eGdcx5/0ktj5I2vC/bNbHg3ORuq9nh++fA39t03nG31J1SoFJmnx3Z0r83Q/yrfA+hAP/qhCI/6B8dHMEcCQJg==
-  dependencies:
-    cross-fetch "^3.0.5"
-
-meilisearch@^0.22.3:
+meilisearch@^0.22.1, meilisearch@^0.22.3:
   version "0.22.3"
   resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.22.3.tgz#6d8ff0881697f083e1c6179837712e359eb8f0ef"
   integrity sha512-Syocfn586JhD0AoEhiu9x5S9xV0z9WPLEDeNaiGFlqR3JJMVQYj0WR5vZ7ZCj/mCkl1VD0GiOW+NsysPY6bWXg==
