@@ -72,12 +72,12 @@ In the `App.vue` file:
 </template>
 
 <script>
-import { instantMeilisearch } from '@meilisearch/instant-meilisearch';
+import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 
 export default {
   data() {
     return {
-      searchClient: instantMeilisearch(
+      searchClient: instantMeiliSearch(
         "https://integration-demos.meilisearch.com",
         "q7QHwGiX841a509c8b05ef29e55f2d94c02c00635f729ccf097a734cbdf7961530f47c47"
       ),

@@ -1,11 +1,11 @@
-## MeiliSearch Search in Nobel Winners
+## Meilisearch Search in Nobel Winners
 
 In this directory, you will find the front-end interface to search through all Nobel Prize winners and their details.
-The search is powered by [MeiliSearch](https://github.com/meilisearch/meilisearch), a powerful, fast and open-source search engine easy to use and deploy.
+The search is powered by [Meilisearch](https://github.com/meilisearch/meilisearch), a powerful, fast and open-source search engine easy to use and deploy.
 
 ## Demo
 
-_Based on [How to Search Nobel Prize Winners Faster With MeiliSearch and JavaScript](https://blog.meilisearch.com/how-to-search-nobel-prize-winners-faster-with-meilisearch-api-for-javascript/)._
+_Based on [How to Search Nobel Prize Winners Faster With Meilisearch and JavaScript](https://blog.meilisearch.com/how-to-search-nobel-prize-winners-faster-with-meilisearch-api-for-javascript/)._
 
 [![Nobel prices demo](misc/marie-heavy.gif)](https://nobel.meilisearch.com)
 
@@ -23,22 +23,22 @@ $ yarn serve # or npm run serve
 
 You can now visit `http://localhost:8080/` in your browser.
 
-We've included some credentials in the code, allowing you to test the demo without having to create your own MeiliSearch instance.
+We've included some credentials in the code, allowing you to test the demo without having to create your own Meilisearch instance.
 
 ## Data import
 
-If you want to replicate this demo using your own MeiliSearch instance, you will have to follow these steps:
+If you want to replicate this demo using your own Meilisearch instance, you will have to follow these steps:
 
-### 1. Download and launch MeiliSearch
+### 1. Download and launch Meilisearch
 
-[Download and launch MeiliSearch](https://docs.meilisearch.com/reference/features/installation.html) using the basic configuration. For example, by using [cURL](https://curl.haxx.se/) in your terminal.
+[Download and launch Meilisearch](https://docs.meilisearch.com/reference/features/installation.html) using the basic configuration. For example, by using [cURL](https://curl.haxx.se/) in your terminal.
 
 ```bash
 $ curl -L https://install.meilisearch.com | sh
 $ ./meilisearch
 ```
 
-This walkthrough runs MeiliSearch in a development environment, and therefore it does not use any [master key](https://docs.meilisearch.com/reference/features/configuration.html#master-key).
+This walkthrough runs Meilisearch in a development environment, and therefore it does not use any [master key](https://docs.meilisearch.com/reference/features/configuration.html#master-key).
 
 ### 2. Run the setup
 
@@ -50,13 +50,13 @@ $ yarn start # or npm run start
 ```
 
 This will do the following:
-- Create an index called `prizes` in your MeiliSearch instance.
+- Create an index called `prizes` in your Meilisearch instance.
 - Add all Nobel prizes documents to that index.
 - Add custom settings for a more relevant search.
 
 ### 3. Change the credentials in the front-end client
 
-The credentials of the MeiliSearch instance are written inside `src/meilisearch-client.js`. By default, these are the public credentials for the Nobel dataset.
+The credentials of the Meilisearch instance are written inside `src/meilisearch-client.js`. By default, these are the public credentials for the Nobel dataset.
 
 You have to change these credentials with your local instance:
 
@@ -74,7 +74,7 @@ Because we did not set any API key at [step 1](#1-download-and-launch-meilisearc
 
 ### 4. Run the project
 
-You can now go back to the root directory and run the project. The front-end client is now communicating with your MeiliSearch instance.
+You can now go back to the root directory and run the project. The front-end client is now communicating with your Meilisearch instance.
 
 ```bash
 $ cd ..
