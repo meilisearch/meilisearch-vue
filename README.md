@@ -19,7 +19,7 @@
 
 <p align="center">⚡ How to integrate a front-end search bar in your Vue application using Meilisearch</p>
 
-**Meilisearch** is an open-source search engine. [Discover what Meilisearch is!](https://github.com/meilisearch/Meilisearch)
+**Meilisearch** is an open-source search engine. [Discover what Meilisearch is!](https://github.com/meilisearch/meilisearch)
 
 This repository describes the steps to integrate a relevant front-end search bar with a search-as-you-type experience!
 
