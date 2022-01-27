@@ -1,6 +1,6 @@
 {
   "name": "nobel-prizes",
-  "description": "Front-end to showcase search in nobel prizes with MeiliSearch.",
+  "description": "Front-end to showcase search in nobel prizes with Meilisearch.",
   "version": "0.1.0",
   "private": true,
   "scripts": {
