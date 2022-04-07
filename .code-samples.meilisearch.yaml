@@ -1,0 +1,40 @@
+landing_getting_started_1: |-
+  // In main.js
+  import Vue from 'vue';
+  import App from './App.vue';
+  import InstantSearch from 'vue-instantsearch';
+
+  Vue.use(InstantSearch);
+
+  new Vue({
+    el: '#app',
+    render: h => h(App),
+  });
+
+
+  // In App.vue
+  <template>
+    <ais-instant-search :search-client="searchClient" index-name="movies">
+      <ais-search-box />
+      <ais-hits>
+        <div slot="item" slot-scope="{ item }">
+          <h2>{{ item.title }}</h2>
+        </div>
+      </ais-hits>
+    </ais-instant-search>
+  </template>
+
+  <script>
+  import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
+
+  export default {
+    data() {
+      return {
+        searchClient: instantMeiliSearch(
+          "http://localhost:7700",
+          "searchKey"
+        ),
+      };
+    },
+  };
+  </script>
