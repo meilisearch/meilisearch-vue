@@ -23,7 +23,16 @@
 
 This repository describes the steps to integrate a relevant front-end search bar with a search-as-you-type experience!
 
-## Installation
+
+## Table of Contents <!-- omit in toc -->
+
+- [🔧 Installation](#-installation)
+- [🎬 Getting Started](#-getting-started)
+- [👩‍🎨 Examples](#-examples)
+- [💅 Customization and Documentation](#-customization-and-documentation)
+
+
+## 🔧 Installation
 
 To integrate a front-end search bar, you need to install two packages:
 - the open-source [Vue InstantSearch](https://github.com/algolia/vue-instantsearch/) library powered by Algolia that provides all the front-end tools you need to highly customize your search bar environment.
@@ -40,7 +49,9 @@ npm install vue-instantsearch @meilisearch/instant-meilisearch
 
 NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://docs.meilisearch.com/learn/tutorials/getting_started.html).
 
-## Getting Started
+## 🎬 Getting Started
+
+The following getting started uses `Vue 2`. A `Vue 3` example is [provided here](#-examples).
 
 In the `main.js` file:
 
@@ -94,21 +105,25 @@ body {
 </style>
 ```
 
-🚀 For a full getting started example, please take a look at this CodeSandbox:
+## 👩‍🎨 Examples
 
-[![Edit MS + Vue-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ms-vue-is-1d6bi?fontsize=14&hidenavigation=1&theme=dark)
+🚀 For a full example, please take a look at this CodeSandbox:
+
+For Vue 2 <br>
+
+[![Edit MS + Vue2-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ms-vue-is-1d6bi?fontsize=14&hidenavigation=1&theme=dark)
+
+For Vue 3 <br>
+
+[![Edit MS + Vue3-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ms-vue3-is-0293zk?file=/src/App.vue:0-1)
 
 💡 If you have never used Vue InstantSearch before, we recommend reading this [getting started documentation](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/vue/).
 
-## Customization and Documentation
+## 💅 Customization and Documentation
 
 - The open-source Vue InstantSearch library is widely used and well documented in the [Algolia documentation](https://www.algolia.com/doc/api-reference/widgets/vue/). It provides all the widgets to customize and improve your search bar environment in your Vue application.
 - The [instant-meilisearch documentation](https://github.com/meilisearch/instant-meilisearch/) to add some customization.
 - The [Meilisearch documentation](https://docs.meilisearch.com/).
-
-## Demos
-
-Each demo in this repository comes with a README.md explaining how to launch and use it. You can find the demos in the [examples directory](./examples).
 
 <hr>
 
