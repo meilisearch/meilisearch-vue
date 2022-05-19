@@ -27,7 +27,8 @@ This repository describes the steps to integrate a relevant front-end search bar
 ## Table of Contents <!-- omit in toc -->
 
 - [🔧 Installation](#-installation)
-- [🎬 Getting Started](#-getting-started)
+- [🤘 Getting Started Vue 2](#-getting-started-vue-2)
+- [🤟 Getting Started Vue 3](#-getting-started-vue-3)
 - [👩‍🎨 Examples](#-examples)
 - [💅 Customization and Documentation](#-customization-and-documentation)
 
@@ -49,9 +50,9 @@ npm install vue-instantsearch @meilisearch/instant-meilisearch
 
 NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://docs.meilisearch.com/learn/tutorials/getting_started.html).
 
-## 🎬 Getting Started
+## 🤘 Getting Started Vue 2
 
-The following getting started uses `Vue 2`. A `Vue 3` example is [provided here](#-examples).
+The following getting started uses `Vue 2`. A `Vue 2` example is [provided here](#-examples).
 
 In the `main.js` file:
 
@@ -78,6 +79,61 @@ In the `App.vue` file:
       <div slot="item" slot-scope="{ item }">
         <h2>{{ item.name }}</h2>
       </div>
+    </ais-hits>
+  </ais-instant-search>
+</template>
+
+<script>
+import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
+
+export default {
+  data() {
+    return {
+      searchClient: instantMeiliSearch(
+        "https://integration-demos.meilisearch.com",
+        "q7QHwGiX841a509c8b05ef29e55f2d94c02c00635f729ccf097a734cbdf7961530f47c47"
+      ),
+    };
+  },
+};
+</script>
+
+<style>
+body {
+  font-family: sans-serif;
+  padding: 1em;
+}
+</style>
+```
+
+## 🤟 Getting Started Vue 3
+
+The following getting started uses `Vue 3`. A `Vue 3` example is [provided here](#-examples).
+
+In the `main.js` file:
+
+```js
+import { createApp } from 'vue'
+import App from './App.vue'
+import InstantSearch from 'vue-instantsearch/vue3/es';
+import "instantsearch.css/themes/algolia-min.css";
+
+createApp(App)
+    .use(InstantSearch)
+    .mount('#app')
+
+```
+
+In the `App.vue` file:
+
+```vue
+<template>
+  <ais-instant-search :search-client="searchClient" index-name="steam-video-games">
+    <ais-search-box />
+    <ais-hits>
+      <template v-slot:item="{ item }">
+        <h2>{{ item.name }}</h2>
+      </template>
     </ais-hits>
   </ais-instant-search>
 </template>
