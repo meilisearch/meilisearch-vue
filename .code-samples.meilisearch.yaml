@@ -39,7 +39,7 @@ landing_getting_started_1: |-
   };
   </script>
 getting_started_front_end_integration_md: |-
-  The following example uses [Vue 2](https://vuejs.org/), the second major release of a JavaScript framework for building web user interfaces.
+  The following example uses [Vue 2](https://vuejs.org/), the second major release of Vue, a JavaScript framework for building web user interfaces. An example using Vue 3 is coming soon.
 
   ```html
   <!DOCTYPE html>
@@ -87,9 +87,3 @@ getting_started_front_end_integration_md: |-
   - Other Vue components such as `<ais-configure>` and `<ais-highlight>` are optional. They offer greater control over `instant-meilisearch`'s behavior and appearance
   - The first two`<script src="..">` tags import libraries needed to run `instant-meilisearch` with Vue
   - The third and final `<script>` creates a new Vue instance and instructs it to use `instant-meilisearch`
-
-  :::note
-
-  The above example uses Vue 2. Refer to [this GitHub issue](https://github.com/meilisearch/meilisearch-vue/issues/102) to learn more about Vue 3.
-
-  :::
