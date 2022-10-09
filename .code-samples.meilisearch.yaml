@@ -87,3 +87,91 @@ getting_started_front_end_integration_md: |-
   - Other Vue components such as `<ais-configure>` and `<ais-highlight>` are optional. They offer greater control over `instant-meilisearch`'s behavior and appearance
   - The first two`<script src="..">` tags import libraries needed to run `instant-meilisearch` with Vue
   - The third and final `<script>` creates a new Vue instance and instructs it to use `instant-meilisearch`
+
+
+landing_getting_started_with_vue_3: |-
+  // In main.js
+  import { createApp } from "vue";
+  import App from "./App.vue";
+  import InstantSearch from "vue-instantsearch/vue3/es";
+  import "instantsearch.css/themes/algolia-min.css";
+
+  createApp(App).use(InstantSearch).mount("#app");
+
+
+  // In App.vue
+  <template>
+    <ais-instant-search :search-client="searchClient" index-name="movies">
+      <ais-search-box />
+      <ais-hits>
+        <div slot="item" slot-scope="{ item }">
+          <h2>{{ item.title }}</h2>
+        </div>
+      </ais-hits>
+    </ais-instant-search>
+  </template>
+
+  <script>
+  import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
+
+  export default {
+    data() {
+      return {
+        searchClient: instantMeiliSearch(
+          "http://localhost:7700",
+          "lion"
+        ),
+      };
+    },
+  };
+  </script>
+
+getting_started_front_end_integration_md_vue_3: |-
+  The following example uses [Vue 3](https://vuejs.org/).
+
+  ```html
+<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" />
+  </head>
+
+  <body>
+    <div id="app" class="wrapper">
+      <ais-instant-search :search-client="searchClient" index-name="movies">
+        <ais-configure :hits-per-page.camel="10" />
+        <ais-search-box placeholder="Search here…" class="searchbox"></ais-search-box>
+        <ais-hits>
+          <div slot="item" slot-scope="{ item }">
+            <ais-highlight :hit="item" attribute="title" />
+          </div>
+        </ais-hits>
+      </ais-instant-search>
+    </div>
+  </body>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-instantsearch/vue3/umd/index.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/dist/instant-meilisearch.umd.min.js">
+  </script>
+  
+  <script>
+    const app = Vue
+      .createApp({
+        data() {
+          return {
+            searchClient: instantMeiliSearch('http://127.0.0.1:7700')
+          }
+        }
+      })
+      .use(VueInstantSearch)
+      .mount("#app");
+  </script>
+
+  </html>
+
+  ```
