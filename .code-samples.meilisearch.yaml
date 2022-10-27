@@ -94,37 +94,49 @@ landing_getting_started_with_vue_3: |-
   import { createApp } from "vue";
   import App from "./App.vue";
   import InstantSearch from "vue-instantsearch/vue3/es";
-  import "instantsearch.css/themes/algolia-min.css";
 
   createApp(App).use(InstantSearch).mount("#app");
 
 
-  // In App.vue
+
+  // In App.vue  
   <template>
-    <ais-instant-search :search-client="searchClient" index-name="movies">
-      <ais-search-box />
+    <ais-instant-search
+      :search-client="searchClient"
+      index-name="steam-video-games"
+    >
+      <ais-configure :hits-per-page.camel="10" />
+      <ais-search-box
+        placeholder="Search here..."
+        class="searchbox"
+      ></ais-search-box>
       <ais-hits>
-        <div slot="item" slot-scope="{ item }">
-          <h2>{{ item.title }}</h2>
-        </div>
+        <template v-slot:item="{ item }">
+          <ais-highlight :hit="item" attribute="name" />
+        </template>
       </ais-hits>
     </ais-instant-search>
   </template>
 
   <script>
-  import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
+  import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
+  import "@meilisearch/instant-meilisearch/templates/basic_search.css";
 
   export default {
     data() {
       return {
         searchClient: instantMeiliSearch(
-          "http://localhost:7700",
-          "lion"
+          "https://integration-demos.meilisearch.com",
+          "99d1e034ed32eb569f9edc27962cccf90b736e4c5a70f7f5e76b9fab54d6a185"
         ),
       };
     },
   };
   </script>
+
+  body {
+    padding: 2rem;
+  }
 
 getting_started_front_end_integration_md_vue_3: |-
   The following example uses [Vue 3](https://vuejs.org/).
