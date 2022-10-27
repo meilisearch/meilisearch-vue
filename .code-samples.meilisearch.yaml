@@ -96,8 +96,7 @@ landing_getting_started_with_vue_3: |-
   import InstantSearch from "vue-instantsearch/vue3/es";
 
   createApp(App).use(InstantSearch).mount("#app");
-
-
+  
 
   // In App.vue  
   <template>
@@ -134,9 +133,11 @@ landing_getting_started_with_vue_3: |-
   };
   </script>
 
-  body {
-    padding: 2rem;
-  }
+  <style>
+    body {
+      padding: 2rem;
+    }
+  </style>
 
 getting_started_front_end_integration_md_vue_3: |-
   The following example uses [Vue 3](https://vuejs.org/).
@@ -153,7 +154,7 @@ getting_started_front_end_integration_md_vue_3: |-
   </head>
 
   <body>
-    <div id="app" class="wrapper">
+    <div id="app">
       <ais-instant-search :search-client="searchClient" index-name="steam-video-games">
         <ais-configure :hits-per-page.camel="10" />
         <ais-search-box placeholder="Search here..." class="searchbox"></ais-search-box>
