@@ -105,10 +105,7 @@ landing_getting_started_with_vue_3: |-
       index-name="steam-video-games"
     >
       <ais-configure :hits-per-page.camel="10" />
-      <ais-search-box
-        placeholder="Search here..."
-        class="searchbox"
-      ></ais-search-box>
+      <ais-search-box placeholder="Search here..."></ais-search-box>
       <ais-hits>
         <template v-slot:item="{ item }">
           <ais-highlight :hit="item" attribute="name" />
@@ -134,9 +131,9 @@ landing_getting_started_with_vue_3: |-
   </script>
 
   <style>
-    body {
-      padding: 2rem;
-    }
+  body {
+    padding: 2rem;
+  }
   </style>
 
 getting_started_front_end_integration_md_vue_3: |-
@@ -157,7 +154,7 @@ getting_started_front_end_integration_md_vue_3: |-
     <div id="app">
       <ais-instant-search :search-client="searchClient" index-name="steam-video-games">
         <ais-configure :hits-per-page.camel="10" />
-        <ais-search-box placeholder="Search here..." class="searchbox"></ais-search-box>
+        <ais-search-box placeholder="Search here..."></ais-search-box>
         <ais-hits>
           <template v-slot:item="{ item }">
             <ais-highlight :hit="item" attribute="name" />
