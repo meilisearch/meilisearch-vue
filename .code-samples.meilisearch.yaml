@@ -141,7 +141,7 @@ getting_started_front_end_integration_md_vue_3: |-
   </head>
 
   <body>
-    <div id="app">
+    <div id="app" class="wrapper">
       <ais-instant-search :search-client="searchClient" index-name="steam-video-games">
         <ais-configure :hits-per-page.camel="10" />
         <ais-search-box placeholder="Search here..." class="searchbox"></ais-search-box>
