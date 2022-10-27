@@ -130,7 +130,7 @@ getting_started_front_end_integration_md_vue_3: |-
   The following example uses [Vue 3](https://vuejs.org/).
 
   ```html
-<!DOCTYPE html>
+  <!DOCTYPE html>
   <html lang="en">
 
   <head>
@@ -138,127 +138,18 @@ getting_started_front_end_integration_md_vue_3: |-
 
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" />
-
-      <style>
-        body,
-        h1 {
-          margin: 0;
-          padding: 0;
-        }
-
-        body {
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-            Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-        }
-
-        .disclaimer {
-          text-align: center;
-          font-size: 1.2rem;
-        }
-
-        .header {
-          display: flex;
-          align-items: center;
-          min-height: 50px;
-          padding: 0.5rem 1rem;
-          background-image: linear-gradient(to right, #4dba87, #2f9088);
-          color: #fff;
-          margin-bottom: 1rem;
-        }
-
-        .header a {
-          color: #fff;
-          text-decoration: none;
-        }
-
-        .header-title {
-          font-size: 1.2rem;
-          font-weight: normal;
-        }
-
-        .header-title::after {
-          content: ' ▸ ';
-          padding: 0 0.5rem;
-        }
-
-        .header-subtitle {
-          font-size: 1.2rem;
-        }
-
-        .search-panel__results {
-          padding: 2rem;
-        }
-
-        .searchbox {
-          margin: 2rem 0 1rem;
-        }
-
-        .ais-Highlight-highlighted {
-          font-size: 3rem;
-        }
-
-        .game-container {
-          display: grid;
-          grid-template-columns: 2;
-          grid-template-rows: 1;
-          gap: 4;
-        }
-
-        .left {
-          grid-column: 1/1;
-        }
-
-        .right {
-          font-size: 2rem;
-          align-self: center;
-        } 
-
-        @media screen and (min-width: 1100px) {
-          .right {
-            grid-column: 2 / 2;
-          }
-        }
-      </style>
   </head>
 
   <body>
     <div id="app">
-      <header class="header">
-        <h1 class="header-title">Meilisearch + Vue InstantSearch</h1>
-        <p class="header-subtitle">Search in Steam video games 🎮</p>
-      </header>
-      <p class="disclaimer">
-        This is not the official Steam dataset but only for demo purpose. Enjoy
-        searching with Meilisearch!
-      </p>
-
-
       <ais-instant-search :search-client="searchClient" index-name="steam-video-games">
-        
-        <div class="search-panel__results">
-          <ais-configure :hits-per-page.camel="6" />
-          <ais-search-box class="searchbox"></ais-search-box>
-
-          <ais-hits>
-            <template v-slot:item="{ item }">
-              <div class="game-container">
-                  <div class="left">
-                    <div class="hit-name">
-                      <ais-highlight :hit="item" attribute="name" style="font-size: 3rem;" />
-                    </div>
-                    <img :src="item.image" :alt="item.image" style="margin-top: 20px; width: 600px;" />
-                  </div>
-                  <div class="right">
-                    <div class="hit-info" style="margin: 15px 0 0;">Price: {{ item.price }}</div>
-                    <div class="hit-info">Release date: {{ item.releaseDate }}</div>
-                    <div class="hit-info">
-                      Recommended: {{ item.recommendationCount }}
-                    </div>
-                  </div> 
-                </div>
-              </template>
-            </ais-hits>
-        </div>
+        <ais-configure :hits-per-page.camel="10" />
+        <ais-search-box placeholder="Search here..." class="searchbox"></ais-search-box>
+        <ais-hits>
+          <template v-slot:item="{ item }">
+            <ais-highlight :hit="item" attribute="name" />
+         </template>
+          </ais-hits>
       </ais-instant-search>
     </div>
   </body>
@@ -286,9 +177,6 @@ getting_started_front_end_integration_md_vue_3: |-
             searchClient: instantMeiliSearch(
               'https://integration-demos.meilisearch.com/',
               '99d1e034ed32eb569f9edc27962cccf90b736e4c5a70f7f5e76b9fab54d6a185',
-              {
-                paginationTotalHits: 30,
-              }
             )
           }
         }
