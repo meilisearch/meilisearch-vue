@@ -116,8 +116,6 @@ In the `main.js` file:
 import { createApp } from 'vue'
 import App from './App.vue'
 import InstantSearch from 'vue-instantsearch/vue3/es';
-import "instantsearch.css/themes/algolia-min.css";
-import "@meilisearch/instant-meilisearch/templates/basic_search.css";
 
 createApp(App)
     .use(InstantSearch)
@@ -143,6 +141,8 @@ In the `App.vue` file:
 
 <script>
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
+import "instantsearch.css/themes/algolia-min.css";
+
 
 export default {
   data() {
