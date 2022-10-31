@@ -120,14 +120,16 @@ import InstantSearch from 'vue-instantsearch/vue3/es';
 createApp(App)
     .use(InstantSearch)
     .mount('#app')
-
 ```
 
 In the `App.vue` file:
 
 ```vue
 <template>
-  <ais-instant-search :search-client="searchClient" index-name="steam-video-games">
+  <ais-instant-search
+    :search-client="searchClient"
+    index-name="steam-video-games"
+  >
     <ais-search-box />
     <ais-hits>
       <template v-slot:item="{ item }">
@@ -138,26 +140,21 @@ In the `App.vue` file:
 </template>
 
 <script>
-import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
+import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
+import "instantsearch.css/themes/algolia-min.css";
+
 
 export default {
   data() {
     return {
       searchClient: instantMeiliSearch(
         "https://integration-demos.meilisearch.com",
-        "q7QHwGiX841a509c8b05ef29e55f2d94c02c00635f729ccf097a734cbdf7961530f47c47"
+        "99d1e034ed32eb569f9edc27962cccf90b736e4c5a70f7f5e76b9fab54d6a185"
       ),
     };
   },
 };
 </script>
-
-<style>
-body {
-  font-family: sans-serif;
-  padding: 1em;
-}
-</style>
 ```
 
 ## 👩‍🎨 Examples
