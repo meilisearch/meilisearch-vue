@@ -39,7 +39,7 @@ landing_getting_started_1: |-
   };
   </script>
 getting_started_front_end_integration_md: |-
-  The following example uses [Vue 2](https://vuejs.org/), the second major release of Vue, a JavaScript framework for building web user interfaces. An example using Vue 3 is coming soon.
+  The following example uses [Vue 2](https://vuejs.org/), the second major release of Vue, a JavaScript framework for building web user interfaces.
 
   ```html
   <!DOCTYPE html>
