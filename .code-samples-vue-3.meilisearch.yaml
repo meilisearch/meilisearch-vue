@@ -40,7 +40,7 @@ landing_getting_started: |-
   </script>
 
 getting_started_front_end_integration_md: |-
-  The following example uses [Vue 3](https://vuejs.org/) a JavaScript framework for building web user interfaces.
+  The following example uses [Vue 3](https://vuejs.org/), a JavaScript framework for building web user interfaces.
 
   ```html
   <!DOCTYPE html>
