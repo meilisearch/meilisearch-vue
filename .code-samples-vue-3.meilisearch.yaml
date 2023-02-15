@@ -101,7 +101,7 @@ getting_started_front_end_integration_md: |-
   ```
 
   Here's what's happening:
-  - To use `instant-meilisearch` with Vue, you must add `<ais-instant-search>`, `<ais-search-box>`, and `<ais-hits>` to your application's HTML. These components are mandatory when generating the`instant-meilisearch` interface
+  - To use `instant-meilisearch` with Vue, you must add `<ais-instant-search>`, `<ais-search-box>`, and `<ais-hits>` to your application's HTML. These components are mandatory when generating the `instant-meilisearch` interface
   - Other Vue components such as `<ais-configure>` and `<ais-highlight>` are optional. They offer greater control over `instant-meilisearch`'s behavior and appearance
   - The three `<script src="..">` tags import libraries needed to run `instant-meilisearch` with Vue
   - The fourth and final `<script>` creates a new Vue instance and instructs it to use `instant-meilisearch`
