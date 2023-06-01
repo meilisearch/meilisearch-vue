@@ -10,7 +10,7 @@
   <a href="https://discord.meilisearch.com">Discord</a> |
   <a href="https://roadmap.meilisearch.com/tabs/1-under-consideration">Roadmap</a> |
   <a href="https://www.meilisearch.com">Website</a> |
-  <a href="https://docs.meilisearch.com/faq">FAQ</a>
+  <a href="https://www.meilisearch.com/docs/faq">FAQ</a>
 </h4>
 
 <p align="center">
@@ -48,7 +48,7 @@ yarn add vue-instantsearch @meilisearch/instant-meilisearch
 npm install vue-instantsearch @meilisearch/instant-meilisearch
 ```
 
-NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://docs.meilisearch.com/learn/tutorials/getting_started.html).
+NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://www.meilisearch.com/docs/learn/tutorials/getting_started.html).
 
 ## 🤘 Getting Started Vue 2
 
@@ -175,7 +175,7 @@ For Vue 3 <br>
 
 - The open-source Vue InstantSearch library is widely used and well documented in the [Algolia documentation](https://www.algolia.com/doc/api-reference/widgets/vue/). It provides all the widgets to customize and improve your search bar environment in your Vue application.
 - The [instant-meilisearch documentation](https://github.com/meilisearch/instant-meilisearch/) to add some customization.
-- The [Meilisearch documentation](https://docs.meilisearch.com/).
+- The [Meilisearch documentation](https://www.meilisearch.com/docs/).
 
 <hr>
 
