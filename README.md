@@ -138,7 +138,7 @@ In the `App.vue` file:
     <ais-search-box />
     <ais-hits>
       <template v-slot:item="{ item }">
-        <h2>{{ item.name }}</h2>
+        <ais-highlight :hit="item" attribute="name" />
       </template>
     </ais-hits>
   </ais-instant-search>
@@ -154,8 +154,8 @@ export default {
     return {
       searchClient: instantMeiliSearch(
         "https://ms-adf78ae33284-106.lon.meilisearch.io",
-        "a63da4928426f12639e19d62886f621130f3fa9ff3c7534c5d179f0f51c4f303"
-      ),
+        "a63da4928426f12639e19d62886f621130f3fa9ff3c7534c5d179f0f51c4f303",
+      ).searchClient,
     };
   },
 };
