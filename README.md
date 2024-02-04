@@ -48,9 +48,9 @@ _Instead of reinventing the wheel, we have opted to reuse the InstantSearch libr
 Run:
 
 ```bash
-yarn add vue-instantsearch @meilisearch/instant-meilisearch
+yarn add vue-instantsearch @meilisearch/instant-meilisearch instantsearch.css
 # or
-npm install vue-instantsearch @meilisearch/instant-meilisearch
+npm install vue-instantsearch @meilisearch/instant-meilisearch instantsearch.css
 ```
 
 NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://www.meilisearch.com/docs/learn/getting_started/installation#installation).
