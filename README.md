@@ -48,9 +48,9 @@ _Instead of reinventing the wheel, we have opted to reuse the InstantSearch libr
 Run:
 
 ```bash
-yarn add vue-instantsearch @meilisearch/instant-meilisearch
+yarn add vue-instantsearch @meilisearch/instant-meilisearch instantsearch.css
 # or
-npm install vue-instantsearch @meilisearch/instant-meilisearch
+npm install vue-instantsearch @meilisearch/instant-meilisearch instantsearch.css
 ```
 
 NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://www.meilisearch.com/docs/learn/getting_started/installation#installation).
@@ -138,7 +138,7 @@ In the `App.vue` file:
     <ais-search-box />
     <ais-hits>
       <template v-slot:item="{ item }">
-        <h2>{{ item.name }}</h2>
+        <ais-highlight :hit="item" attribute="name" />
       </template>
     </ais-hits>
   </ais-instant-search>
@@ -154,8 +154,8 @@ export default {
     return {
       searchClient: instantMeiliSearch(
         "https://ms-adf78ae33284-106.lon.meilisearch.io",
-        "a63da4928426f12639e19d62886f621130f3fa9ff3c7534c5d179f0f51c4f303"
-      ),
+        "a63da4928426f12639e19d62886f621130f3fa9ff3c7534c5d179f0f51c4f303",
+      ).searchClient,
     };
   },
 };
