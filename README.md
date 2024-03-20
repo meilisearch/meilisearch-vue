@@ -95,8 +95,8 @@ export default {
   data() {
     return {
       searchClient: instantMeiliSearch(
-        "https://integration-demos.meilisearch.com",
-        "q7QHwGiX841a509c8b05ef29e55f2d94c02c00635f729ccf097a734cbdf7961530f47c47"
+        "https://ms-adf78ae33284-106.lon.meilisearch.io",
+        "a63da4928426f12639e19d62886f621130f3fa9ff3c7534c5d179f0f51c4f303",
       ),
     };
   },
