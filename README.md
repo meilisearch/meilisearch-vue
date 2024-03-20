@@ -172,7 +172,7 @@ For Vue 2 <br>
 
 For Vue 3 <br>
 
-[![Edit MS + Vue3-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ms-vue3-is-0293zk?file=/src/App.vue:0-1)
+[![Edit MS + Vue3-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/ms-vue3-is-forked-wsrkl8)
 
 💡 If you have never used Vue InstantSearch before, we recommend reading this [getting started documentation](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/vue/).
 
